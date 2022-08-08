@@ -1,5 +1,19 @@
 var colors = require('colors');
-let n = 100;
+const readline=require('readline')
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+
+rl.question('введите число? ', (answer) => {
+start(answer)
+  rl.close();12
+});
+
+let start=(answer)=>{
+ let n = answer;
 let arr=[]
 nextPrime:
 for (let i = 2; i <= n; i++) { 
@@ -27,8 +41,6 @@ for(j=0;j<arrs.length;j++){
 
 
 }
-a=a+3;
-b=b+3
-
+a=a+3;b=b+3
+} 
 }
-
