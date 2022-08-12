@@ -16,9 +16,9 @@ const generateRundomIP = () => {
   });
 };
 
-// for (i=0;i<10000;i++){
-//   generateRundomIP()
-// }///запустить для генерации файла 1 мб
+for (i=0;i<10000;i++){
+  generateRundomIP()
+}///запустить для генерации файла 1 мб
 
 // const payedAccount = true;
 
