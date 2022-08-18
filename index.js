@@ -25,7 +25,7 @@ readline.createInterface({
     input: fs.createReadStream(filename),
     terminal: false
 }).on('line', function(line) {
-  if (line==`${answer} - - [25/May/2021:00:07:17 +0000] "GET /foo HTTP/1.1" 200 0 "-" "curl/7.47.0",`){
+  if (line.startsWith(answer)){
     fs.appendFile("test.log", line, function(error){
       if(error) throw error;                    
       console.log("Запись файла завершена. Содержимое файла:");
